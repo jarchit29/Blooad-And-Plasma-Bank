@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.e.blood_bank">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/realm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".AffectedCountries" />
+        <activity android:name=".RequestPlasma" />
+        <activity android:name=".plasama_search_results" />
+        <activity android:name=".Search_result" />
+        <activity android:name=".Request_Blood" />
+        <activity android:name=".PlasmaSearch" />
+        <activity android:name=".PlasmaActivity" />
+        <activity android:name=".TrackerActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".WelcomeScreen" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".WelcomeScreen" />
+        <activity android:name=".WelcomeScreen" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BloodActivity" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer"
+        android:required="true"/>
+
+</manifest>

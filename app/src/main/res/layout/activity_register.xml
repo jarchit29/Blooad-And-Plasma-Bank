@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/realm"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/textnote2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text=" NOTE:-Details entered will be shared with verified users "
+        android:textSize="20dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/textnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rlinearcont"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textnote2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/reditname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/reditcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your city"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="40dp"
+        />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/reditphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your number "
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="40dp"
+            android:inputType="number"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/reditbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your blood group"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/reditpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password "
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+    android:id="@+id/Register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="Register"
+    android:textAllCaps="true"
+    android:textSize="30dp"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="15dp"
+    android:background="@drawable/gradientbut"
+    android:textColor="@color/colorAccent"
+    />
+
+
+</RelativeLayout>

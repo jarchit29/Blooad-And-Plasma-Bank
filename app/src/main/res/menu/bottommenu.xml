@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home" android:title="Home" app:showAsAction="always" android:icon="@drawable/home">
+
+    </item>
+    <item android:id="@+id/plasma" app:showAsAction="always" android:title="Plasma " android:icon="@drawable/ic_local_hospital_black_24dp">
+    </item>
+
+    <item
+        android:id="@+id/map"
+        app:showAsAction="always"
+        android:title="Tracker"
+        android:icon="@drawable/ic_add_location_black_24dp"></item>
+</menu>

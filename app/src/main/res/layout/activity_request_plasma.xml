@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Request_Blood">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/realm"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/textnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text=" Mention a message for blood request help others to reach you.. "
+        android:textSize="20dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/pmessageReq"
+        android:layout_below="@+id/textnote"
+        android:layout_width="match_parent"
+        android:height="250dp"
+        android:textSize="20dp"
+        android:hint="Message"
+        android:gravity="top"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/rectabglebox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/pPostReq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="post request"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/gradientbut"
+        android:textColor="@color/colorAccent"
+        />
+
+</RelativeLayout>

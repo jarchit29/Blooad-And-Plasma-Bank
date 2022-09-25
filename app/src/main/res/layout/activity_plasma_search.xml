@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/realm"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/textnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text=" Be calm... We are here to help you !!"
+        android:textSize="20dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/cont1"
+        android:layout_below="@id/textnote"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+
+        <EditText
+
+            android:id="@+id/pcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter city name "
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+
+            />
+
+        <EditText
+
+            android:id="@+id/pbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="Enter blood group"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/PSearchnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Find donors"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/gradientbut"
+        android:textColor="@color/colorAccent"
+        />
+
+
+</RelativeLayout>
